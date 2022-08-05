@@ -1,0 +1,37 @@
+
+
+CORBA - first protocols for data exhange - binary format
+RMI - Java specific - binary format 
+Text - data transfer .. CSV f1,f2,f3 - lack of structure - human readable
+XML - IMPORTANT!!! - text format ( WebServices - Corba over XML ) - schema, and validation requirements
+JSON - text format - javascript - serialiazation of Javascript objects -> JSON
+   - Ajax - Async Browser to backend API (Web2.0) 
+
+Database
+  - Persistence + Structure
+
+Relational - follow the relational model - have and know to execute SQL
+ - programming language for accesing the relational structures
+    - Tables - collections of records
+      Records - collections of fields
+      Constraints - Primary key , foreign key, data type constraints 
+      SQL - DML DDL
+      TRANSACTION!!!! ACID !!??? Atomicity, Consistency, Isolation , Durability ??
+      Programming- SQL client , SQL library - Jdbc drivers - Java
+
+Record oriented storage - Oracle, MS SQL, Postgres, MariaDB, etc
+Column oriented storage - Sybase
+
+
+
+varchar(128) "XX" takes 2 bytes
+char(128) "XX" takes 128 bytes "XX\0\0\0\0\0\0\0\0\0\0\0......."
+
+java.sql.Types
+
+Non-Relational - dont follow Relational ALGEBRA - Constraints - (primary key), No Transactions - scalability !!!! - using key sharding
+  MongoDB ??? key/value 
+  CouchDB ??? //
+  Cassandra ??
+  HBase ???
+
