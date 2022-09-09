@@ -21,8 +21,8 @@ public class IntrospectionTest {
     Set<String> methodNames = Arrays.stream(myClass.getClass().getDeclaredMethods())
         .map(m -> m.getName()).collect(Collectors.toSet());
     System.out.println(methodNames);
-
-    Field f1 = myClass.getClass().getDeclaredField("fld1");
+    String fldName = "fld1";
+    Field f1 = myClass.getClass().getDeclaredField(fldName);
     f1.setAccessible(true); // SecurityManager
     System.out.println(f1.get(myClass));
 
