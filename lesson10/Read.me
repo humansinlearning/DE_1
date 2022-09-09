@@ -3,6 +3,8 @@ For each country we ask for public holidays
 Select country(s) with max num of PH
 Select country(s) with min num of PH
 
+Try TO USE PARALLEL STREAMING!!
+
 CountryCodeList.stream()
  .map(cc -> createCountryInfo(cc))
  .min(Comparator(ci->getPhCount())
