@@ -17,3 +17,8 @@ CountryCodeList.stream()
    }
  }
 
+  spark.conf.set("fs.defaultFS", "")
+  spark.conf.set("fs.gs.auth.service.account.private.key.id", "")
+  spark.conf.set("fs.gs.auth.service.account.email", "")
+  spark.conf.set("fs.gs.auth.service.account.private.key", "")
+
