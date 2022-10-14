@@ -55,6 +55,8 @@ public class PipelineVisitorTest {
 
 }
 
+//** JAVA NIO USES VISITOR PATTERN!!! .. Apache Beam - HERE - visiting pipeline structure
+
 class NodesVisitor implements Pipeline.PipelineVisitor {
 
   private List<TransformHierarchy.Node> visitedNodes = new ArrayList<>();
